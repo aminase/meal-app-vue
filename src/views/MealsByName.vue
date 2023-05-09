@@ -5,13 +5,18 @@ import axiosClient from '../axiosClient'
 import YouTubeButton from '../components/YouTubeButton.vue'
 import MealItem from '../components/MealItem.vue'
 import store from '../store'
+import Meals from '../components/Meals.vue'
 
 const keyword = ref('')
 const route = useRoute()
 
 function searchMeals() {
-  store.dispatch('searchMeals', keyword.value)
-  // axiosClient.get(`/search.php?s=${keyword.value}`)
+  if (keyword.value) {
+    store.dispatch('searchMeals', keyword.value)
+    // axiosClient.get(`/search.php?s=${keyword.value}`)
+  } else {
+    store.commit('setSearchedMeals', [])
+  }
 }
 
 const meals = computed(() => store.state.searchedMeals)
@@ -23,7 +28,6 @@ onMounted(() => {
   }
 })
 </script>
-
 <template>
   <div>
     <div class="p-8 pb-0">
@@ -31,13 +35,11 @@ onMounted(() => {
         v-focus
         v-model="keyword"
         type="text"
-        class="rounded border-2 border-grey-200 w-full"
+        class="rounded border-2 bg-white border-grey-200 w-full"
         placeholder="Search for meals"
         @change="searchMeals"
       />
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-5 p-8">
-      <MealItem v-for="meal of meals" :key="meal.idMeal" :meal="meal" />
-    </div>
+    <Meals :meals="meals" />
   </div>
 </template>
