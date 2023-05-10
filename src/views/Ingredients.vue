@@ -16,7 +16,7 @@ const computedIngredients = computed(() => {
 })
 
 function openIngredient(ingredient) {
-  store.commit('setIngredient', ingredient)
+  store.commit('setIngredients', ingredient)
   router.push({
     name: 'byIngredient',
     params: { ingredient: ingredient.strIngredient },
