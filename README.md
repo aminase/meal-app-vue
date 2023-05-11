@@ -5,7 +5,7 @@ This template should help get you started developing with Vue 3 in Vite. The tem
 ## Used API
 https://www.themealdb.com/api.php
 
-### Overview of the app
+## Overview of the app
 
                     ###############################          Page with random meals         ###############################
 
