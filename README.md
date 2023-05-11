@@ -15,7 +15,7 @@ Page with random meals
 
                     ###############################          Search meals by letter          ###############################  
                     
-<img width="1280" alt="Screenshot 2023-05-11 at 11 05 05" src="https://github.com/aminase/meal-app-vue/assets/35095429/838cc7b5-35ed-40bf-9ea7-67e4e157fde7">
+<img width="1280" alt="Screenshot 2023-05-11 at 11 20 07" src="https://github.com/aminase/meal-app-vue/assets/35095429/4a146797-2575-44c9-bafe-388ed1dfd530">
 
                     ###############################          Search by meal's ingredient          ###############################
                     
