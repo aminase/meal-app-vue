@@ -6,7 +6,9 @@ This template should help get you started developing with Vue 3 in Vite. The tem
 https://www.themealdb.com/api.php
 
 ### Overview of the app
-Page with random meals
+
+                    ###############################          Page with random meals         ###############################
+
  <img width="1280" alt="Screenshot 2023-05-11 at 11 01 36" src="https://github.com/aminase/meal-app-vue/assets/35095429/61991e62-dacd-4730-b199-87368e06b57b">
 
                     ###############################          Search meal by its name         ###############################
